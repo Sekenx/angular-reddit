@@ -24,5 +24,5 @@ export class Article {
     } catch (err) {
       return null;
     }
-  }
+  }    
 }
