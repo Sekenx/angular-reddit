@@ -16,17 +16,16 @@ export class ArticleComponent implements OnInit {
       'http://angular.io',
       10);
 }
-
+  // Call method in article class
   voteUp(): boolean {
-    this.article.votes += 1;
+    this.article.voteUp();
     return false; // Stops page reload
 }
-
+  // Call method in article class
   voteDown(): boolean {
-    this.article.votes -= 1;
+    this.article.voteDown();
     return false; // Stops page reload
 }
   ngOnInit() {
   }
-
 }
