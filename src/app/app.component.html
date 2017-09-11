@@ -20,7 +20,7 @@
 <!-- Render all Articles -->
 <div class="ui grid posts">
   <app-article
-    *ngFor="let article of sortedArticles"
+    *ngFor="let article of sortedArticles()"
     [article]="article">
   </app-article>
 </div>
