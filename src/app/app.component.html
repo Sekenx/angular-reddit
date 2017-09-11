@@ -3,14 +3,15 @@
 
   <div class="field">
     <label for="title">Title:</label>
-    <input name="title">
+    <input name="title" #newtitle> <!-- added local variable #-->
   </div>
   <div class="field">
     <label for="link">Link:</label>
-    <input name = "link">
+    <input name = "link" #newlink> <!-- added local variable # -->
   </div>
 
-  <button (click_="addArticle()"
+  <!-- Button, accepts local variables -->
+  <button (click)="addArticle(newtitle, newlink)"
     class="ui positive right floated button">
     Submit link
   </button>
