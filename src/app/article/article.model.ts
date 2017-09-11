@@ -10,11 +10,11 @@ export class Article {
   }
 
   voteUp(): void {
-    this.votes -= 1;
+    this.votes += 1;
   }
 
   voteDown(): void {
-    this.votes += 1;
+    this.votes -= 1;
   }
 
   domain(): string {
