@@ -19,10 +19,12 @@ export class ArticleComponent implements OnInit {
 
   voteUp() {
     this.votes += 1;
+    return false; // Stops page reload
 }
 
   voteDown() {
     this.votes -= 1;
+    return false; // Stops page reload
 }
   ngOnInit() {
   }
